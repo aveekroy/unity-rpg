@@ -15,3 +15,5 @@
 > Giving the ability to the camera to zoom into the Player
 
 > Giving the ability to the camera to rotate with the Player
+
+![Unity RPG](https://github.com/aveekroy/unity-rpg/blob/main/GIF/4.gif)
