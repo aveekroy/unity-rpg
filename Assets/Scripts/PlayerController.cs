@@ -54,13 +54,25 @@ public class PlayerController : MonoBehaviour
 
     void SetFocus(Interactable newFocus)
     {
-        focus = newFocus;
-        // motor.MoveToPoint(newFocus.transform.position);  // can be used if the interactable is stationary and not moving.
-        motor.FollowTarget(newFocus);
+
+        if(newFocus != focus)
+        {
+            if(focus!=null)
+                focus.OnDefocused();
+
+            focus = newFocus;
+            // motor.MoveToPoint(newFocus.transform.position); // can be used if the interactable is stationary and not moving.
+            motor.FollowTarget(newFocus);
+
+        }
+        newFocus.OnFocused(transform); 
     }
 
     void RemoveFocus()
     {
+        if (focus != null)
+            focus.OnDefocused();
+
         focus = null;
         motor.StopFollowingTarget();
     }

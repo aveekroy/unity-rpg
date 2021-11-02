@@ -17,3 +17,9 @@
 > Giving the ability to the camera to rotate with the Player
 
 ![Unity RPG](https://github.com/aveekroy/unity-rpg/blob/main/GIF/4.gif)
+
+> Giving the ability to the player to interact with an object in the scene
+
+> Adding the player character from Blender and animating it to move around in the scene
+
+![Unity RPG](https://github.com/aveekroy/unity-rpg/blob/main/GIF/5.gif)
